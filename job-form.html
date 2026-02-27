@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="job-form.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Job Application Form</h2>
+        <form>
+            <label for="name">Name: </label>
+            <input required type="text" name="name" id="name" placeholder="E.g., Alice" minlength="8">
+            <label for="email">Email: </label>
+            <input required type="email" name="email" id="email" placeholder="E.g., alice@gmail.com">
+            <label for="phone">Phone: </label>
+            <input type="tel" name="phone" id="phone" placeholder="E.g., 688-31-88-44" required minlength="9">
+            <label for="position">Position: </label>
+            <select required id="position" name="position">
+                <option selected value="option">Select a Position</option>
+                <option value="developer">Developer</option>
+                <option value="designer">Designer</option>
+                <option value="product-manager">Product Manager</option>
+                <option value="virtual-assistant">Virtual Assistant</option>
+                <option value="engineer">Ai Engineer</option>
+            </select>
+            <fieldset class="radio-group">
+                <legend>Contract Type</legend>
+                <input checked type="radio" id="full-time" name="availability" class="radio-bt">
+                <label for="full-time" class="radio-btn">Full Time</label>
+                <input type="radio" id="part-time" name="availability" class="radio-bt"> 
+                <label for="part-time" class="radio-btn" >Part Time</label>
+                <input type="radio" id="job-share" name="availability" class="radio-bt">
+                <label for="job-share" class="radio-btn">Job Share</label>
+            </fieldset>
+            <label for="message">Why do you want this Job</label>
+            <textarea required name="message" id="message" cols="30" rows="20" placeholder="enter your reasons" style="height: 300px;"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
