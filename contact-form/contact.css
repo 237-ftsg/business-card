@@ -72,7 +72,7 @@ button {
 }
 
 button:hover {
-    opacity: 50%;
+    background-color: #3d4127;
     color: #ffffff;
     border-color: aliceblue;
 }
