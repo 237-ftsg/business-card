@@ -1,0 +1,78 @@
+:root {
+  --form-color: #3d4127;
+  --main-color: #636b2f;
+}
+body {
+  font-family: Tahoma;
+  background-color: var(--main-color);
+  color: wheat;
+  font-size: 1.2rem;
+  height: 400px;
+  padding-top: 50px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.form-container {
+  width: 60%;
+  min-height: 80%;
+  background-color: var(--form-color);
+  margin: 0 auto;
+  padding: 0 0 10px 0;
+  border: 2px solid #3f461b;
+  box-shadow: 0 0 2px 2px #3f461b;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  width: 100%;
+  margin:  2px 2px;
+  color: wheat;
+}
+
+input, textarea{
+  width: 95%;
+  height: 1.3rem;
+  background-color: #3f461b;
+  border-color: #3f461b;
+  margin: 10px 0;
+  border-radius: 5px;
+  padding: 3px;
+  outline: none;
+}
+
+textarea {
+  height: unset;
+}
+
+input::placeholder, textarea::placeholder {
+  color: wheat;
+  font-size: 1.1em;
+}
+
+input:focus, textarea:focus {
+  outline: 1px solid blue;
+}
+
+button {
+  display: block;
+  margin: 0 auto ;
+  width: 60%;
+  border-radius: 20px;
+  box-sizing: border-box;
+  background-color: #3f461b;
+  color: wheat;
+  border-color: #3f461b;
+  padding: 10px;
+  font-size: 1.3rem;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+    opacity: 50%;
+    color: #ffffff;
+    border-color: aliceblue;
+}
