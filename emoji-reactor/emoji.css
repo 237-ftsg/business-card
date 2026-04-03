@@ -1,0 +1,73 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white-: #fff;
+    --light-grey: #efefef;
+    --very-dark-blue: #0a0a23;
+    --light-purple: #a78bfa;
+    --very-light-purple: #c4b5fd;
+    --purple: #8b5cf6;
+}
+
+body {
+    background-color: var(--very-dark-blue);
+    color: var(--light-grey);
+    font-family: sans-serif;
+}
+
+main {
+    text-align: center;
+    padding: 10px;
+}
+
+.btn-container, button {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.btn-container {
+    flex-direction: column;
+}
+
+button {
+  width: 70%;
+  cursor: pointer;
+  color: var(--white);
+  background-color: var(--light-purple);
+  background-image: linear-gradient(
+    to bottom,
+    var(--very-light-purple),
+    var(--light-purple)
+  );
+  border: 3px solid var(--purple);
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+@media (min-width: 768px) {
+  .emoji-btn {
+    width: 30%;
+  }
+}
+
+.emoji-btn:hover {
+  background-color: var(--purple);
+  background-image: none;
+}
+
+.title {
+  margin-top: 15px;
+  font-size: 2rem;
+}
+
+.description {
+  font-size: 1.4rem;
+  margin: 20px 0;
+}
